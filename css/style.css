@@ -101,7 +101,7 @@ section {
     background-color: #0a071b;
 }
 
-.products {
+.features {
 height: 120vh; 
 
 }
@@ -122,7 +122,7 @@ padding: 15px 45px;
 .main-button {
 /* something soon */
 }
-.products-boxes {
+.features-boxes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,98 @@ padding: 15px 45px;
 .box {
     margin-top: 20px;
     border-radius: 15px;
-    height: 200px;
+    max-height: 300px;
    width: 300px;
     background-color:  #121c3b;
+    animation: load ease-in .4s;
+}
+@keyframes load {
+    25% {opacity: 0.4;}
+    100% {opacity: 1;}
+}
+.features-span {
+    text-shadow: black 1px 0 5px;;
+}
+.blob-object {
+    max-height: 200px;
+}
+.products {
+    height: 40vh;
+}
+.main-products-buttons {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 50px;
+    width: 300px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: background-color .2s;
+}
+.button-products:hover {
+    transition: background-color .2s;
+    background-color: #0d6dfd36;
+}
+.active {
+    border: none;
+    background-color: var(--main);
+    transition: background-color .3s;
+}
+#netflix-section , #nordvpn-section , #spotify-section, #disney-section {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+#netflix-section {
+
+display: flex;
+}
+#nordvpn-section {
+    display: none;
+}
+#spotify-section {
+    display: none;
+}
+#disney-section {
+    display: none;
+    
+}
+.netflix-section-container   {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+hr {
+    height: 5px;
+    background-color: white;
+}
+.button-netflix-section {
+    margin: 20px;
+    border-radius: 15px;
+    background-color: var(--main);
+    padding: 15px 45px;
+    font-size: 15px;
+}
+.box {
+    margin-top: 50px;
+}
+.time {
+    transform: translateY(-20px);
+}
+button {
+    color: white;
+}
+.end {
+    height: 100px;
+    margin-top: 500px;
 }
